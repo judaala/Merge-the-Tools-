@@ -1,0 +1,10 @@
+def merge_the_tools(string, k):
+    list1=list()
+    for i in range(0,len(string),k):
+        list1.append(string[int(i):int(i)+k])
+    for i in list1:
+        a=list()
+        for j in i:
+            if j not in a:
+                a.append(j)
+        print("".join(a))
